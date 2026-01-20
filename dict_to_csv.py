@@ -1,0 +1,60 @@
+data = [
+    {"ID": 1, "Name": "Item_1", "Value": 10},
+    {"ID": 2, "Name": "Item_2", "Value": 20},
+    {"ID": 3, "Name": "Item_3", "Value": 30},
+    {"ID": 4, "Name": "Item_4", "Value": 40},
+    {"ID": 5, "Name": "Item_5", "Value": 50},
+    {"ID": 6, "Name": "Item_6", "Value": 60},
+    {"ID": 7, "Name": "Item_7", "Value": 70},
+    {"ID": 8, "Name": "Item_8", "Value": 80},
+    {"ID": 9, "Name": "Item_9", "Value": 90},
+    {"ID": 10, "Name": "Item_10", "Value": 100},
+    {"ID": 11, "Name": "Item_11", "Value": 110},
+    {"ID": 12, "Name": "Item_12", "Value": 120},
+    {"ID": 13, "Name": "Item_13", "Value": 130},
+    {"ID": 14, "Name": "Item_14", "Value": 140},
+    {"ID": 15, "Name": "Item_15", "Value": 150},
+    {"ID": 16, "Name": "Item_16", "Value": 160},
+    {"ID": 17, "Name": "Item_17", "Value": 170},
+    {"ID": 18, "Name": "Item_18", "Value": 180},
+    {"ID": 19, "Name": "Item_19", "Value": 190},
+    {"ID": 20, "Name": "Item_20", "Value": 200},
+    {"ID": 21, "Name": "Item_21", "Value": 210},
+    {"ID": 22, "Name": "Item_22", "Value": 220},
+    {"ID": 23, "Name": "Item_23", "Value": 230},
+    {"ID": 24, "Name": "Item_24", "Value": 240},
+    {"ID": 25, "Name": "Item_25", "Value": 250},
+    {"ID": 26, "Name": "Item_26", "Value": 260},
+    {"ID": 27, "Name": "Item_27", "Value": 270},
+    {"ID": 28, "Name": "Item_28", "Value": 280},
+    {"ID": 29, "Name": "Item_29", "Value": 290},
+    {"ID": 30, "Name": "Item_30", "Value": 300},
+    {"ID": 31, "Name": "Item_31", "Value": 310},
+    {"ID": 32, "Name": "Item_32", "Value": 320},
+    {"ID": 33, "Name": "Item_33", "Value": 330},
+    {"ID": 34, "Name": "Item_34", "Value": 340},
+    {"ID": 35, "Name": "Item_35", "Value": 350},
+    {"ID": 36, "Name": "Item_36", "Value": 360},
+    {"ID": 37, "Name": "Item_37", "Value": 370},
+    {"ID": 38, "Name": "Item_38", "Value": 380},
+    {"ID": 39, "Name": "Item_39", "Value": 390},
+    {"ID": 40, "Name": "Item_40", "Value": 400},
+    {"ID": 41, "Name": "Item_41", "Value": 410},
+    {"ID": 42, "Name": "Item_42", "Value": 420},
+    {"ID": 43, "Name": "Item_43", "Value": 430},
+    {"ID": 44, "Name": "Item_44", "Value": 440},
+    {"ID": 45, "Name": "Item_45", "Value": 450},
+    {"ID": 46, "Name": "Item_46", "Value": 460},
+    {"ID": 47, "Name": "Item_47", "Value": 470},
+    {"ID": 48, "Name": "Item_48", "Value": 480},
+    {"ID": 49, "Name": "Item_49", "Value": 490},
+    {"ID": 50, "Name": "Item_50", "Value": 500}
+]
+
+FN=["ID","Name","Value"]
+import csv
+with open('data.csv',"w",newline='') as fobj:
+    writer=csv.DictWriter(fobj,fieldnames=FN)
+    writer.writeheader()
+    writer.writerows(data)
+print('Data inserted successfully')
